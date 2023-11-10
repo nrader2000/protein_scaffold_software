@@ -12,4 +12,4 @@ This repo contains my work to combine two existing repos that have done some wor
   - Install other libraries in order using the commands: ```pip install matplotlib```, ```pip install PyMuPDF```, ```pip install reportlab```, ```pip install -U scikit-learn```
 
 ## Running the Application
-TBD
+* Once this is setup all you have to do is run ```python backend.py``` in the tfevn environment.
