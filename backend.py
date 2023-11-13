@@ -1,5 +1,10 @@
+import sys
 import os
 from subprocess import call
+
+from PyQt6.QtGui import QGuiApplication
+from PyQt6.QtQml import QQmlApplicationEngine
+from PyQt6.QtQuick import QQuickWindow
 
 # Executes the autoencoder.py python script from the QinggeLab-ISBRA_2023 repo by Richard 
 def execute_autoencoder():
