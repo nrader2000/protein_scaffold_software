@@ -1,7 +1,7 @@
 # IMPORTANT IMPORTS
 import os
 from subprocess import call
-
+from plyer import notification
 from PyQt6.QtWidgets import *
 from PyQt6.QtCore import *
 from PyQt6.QtGui import *
@@ -36,7 +36,10 @@ class MainWindow(QMainWindow):
                              }""")
       AEButton.setCheckable(True)
       AEButton.clicked.connect(self.execute_autoencoder)
-
+      
+      AELabel = QLabel("*autoencoder.py currently runs for 5-6 minutes*") #Label that showcases runtime
+      AELabel.setFont(QFont('Arial', 14))
+      
       MButton = QPushButton("main.py") # Second button with main.py option
       MButton.setFont(QFont('Arial', 24))
       MButton.setStyleSheet("""
@@ -53,14 +56,18 @@ class MainWindow(QMainWindow):
                              }""")      
       MButton.setCheckable(True)
       MButton.clicked.connect(self.execute_main)
+      
+      MLabel = QLabel("*main.py currently runs for 48 minutes*") #Label that showcases runtime
+      MLabel.setFont(QFont('Arial', 14))
 
       layout = QVBoxLayout() # Layout with all of our widgets
       layout.setSpacing(20)
       layout.setContentsMargins(100,100,100,100)
       layout.addWidget(self.label,0,Qt.AlignmentFlag.AlignCenter)
       layout.addWidget(AEButton,0,Qt.AlignmentFlag.AlignCenter)
+      layout.addWidget(AELabel,0,Qt.AlignmentFlag.AlignCenter)
       layout.addWidget(MButton,0,Qt.AlignmentFlag.AlignCenter)
-      
+      layout.addWidget(MLabel,0,Qt.AlignmentFlag.AlignCenter)
 
       container = QWidget() # Container that utlizes layout
       container.setLayout(layout)
@@ -73,6 +80,11 @@ class MainWindow(QMainWindow):
          try: # Attemps to launch autoencoder.py via call function
             print("Launching autoencoder.py")
             call(["python","autoencoder.py"])
+            notification.notify(
+               title = "Finished executing autoencoder.py",
+               message = "Successfully",
+               timeout = 5
+            )
          except FileNotFoundError:
             print(f"Error: The file does not exist.")
       else: print("Environment Variable Not Set")
@@ -83,6 +95,11 @@ class MainWindow(QMainWindow):
          try:
             print("Launching main.py")
             call(["python","main.py"])
+            notification.notify(
+               title = "Finished executing main.py",
+               message = "Successfully",
+               timeout = 5
+            )
          except FileNotFoundError:
             print(f"Error: The file does not exist.")
       else: print("Environment Variable Not Set")

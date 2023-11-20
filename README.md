@@ -18,8 +18,8 @@ This repo contains my work to combine two existing repos that have done some wor
 * This software simply launches the two major files from the repos this software is suppoed to work with. To launch either of the files, all you have to do is click on one of the buttons named after the file you would like to run.
 
 ## Future Planned Work
-* Add some labels to show how long each file should take to complete
+* Add some labels to show how long each file should take to complete ✅
 * Get a properly working codebase for autoencoder.py (currently runs into a division by 0 error)
 * Attempt to have the ```software-runner``` script perform the main setup of the python development so users do not have to.
 * Attempt to have the ```software-runner``` script become it's own executable so there is no need to need to interact with any python CLI.
-* Attempt to have the ```software-runner``` script report to the user with an alert when the file is finished with execution so the user knows to look inside the results folder. 
+* Attempt to have the ```software-runner``` script report to the user with an alert when the file is finished with execution so the user knows to look inside the results folder ✅. 
