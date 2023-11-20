@@ -9,7 +9,7 @@ This repo contains my work to combine two existing repos that have done some wor
   - Install pip using the command: ```conda install pip``` Then upgrade it using the command ```python -m pip install --upgrade pip```
   - Install cudatoolkit and cuDNN using the command: ```conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0```
   - Install tensorflow by using the command: ```pip install "tensorflow<2.11"```
-  - Install other libraries in order using the commands: ```pip install matplotlib```, ```pip install PyMuPDF```, ```pip install reportlab```, ```pip install -U scikit-learn```, ```pip install PyQt6```
+  - Install other libraries in order using the commands: ```pip install matplotlib```, ```pip install PyMuPDF```, ```pip install reportlab```, ```pip install -U scikit-learn```, ```pip install PyQt6```, ```pip install plyer```
 
 ## Running the Application
 * Once this is setup all you have to do is run ```python software-runner.py``` in the tfenv environment that you've done all the previous setup in.
