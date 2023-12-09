@@ -20,6 +20,6 @@ This repo contains my work to combine two existing repos that have done some wor
 ## Future Planned Work
 * Add some labels to show how long each file should take to complete ✅
 * Get a properly working codebase for autoencoder.py (currently runs into a division by 0 error)
-* Attempt to have the ```software-runner``` script perform the main setup of the python development so users do not have to.
-* Attempt to have the ```software-runner``` script become it's own executable so there is no need to need to interact with any python CLI.
-* Attempt to have the ```software-runner``` script report to the user with an alert when the file is finished with execution so the user knows to look inside the results folder ✅. 
+* Attempt to have the ```software-runner``` script perform the main setup of the python development so users do not have to
+* Attempt to have the ```software-runner``` script become it's own executable so there is no need to need to interact with any python CLI
+* Attempt to have the ```software-runner``` script report to the user with an alert when the file is finished with execution so the user knows to look inside the results folder ✅ 
