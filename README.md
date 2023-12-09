@@ -12,7 +12,7 @@ This repo contains my work to combine two existing repos that have done some wor
   - Install other libraries in order using the commands: ```pip install matplotlib```, ```pip install PyMuPDF```, ```pip install reportlab```, ```pip install -U scikit-learn```, ```pip install PyQt6```, ```pip install plyer```
 
 ## Running the Application
-* Once this is setup all you have to do is run ```python software-runner.py``` in the tfenv environment that you've done all the previous setup in.
+* Once this is setup all you have to do is run ```python software-runner.py``` in the tfenv environment that you've done all the previous setup in, make sure you are running python in the directory of this repo so python can actually run on the program.
 
 ## How the Software *currently* Works
 * This software simply launches the two major files from the repos this software is suppoed to work with. To launch either of the files, all you have to do is click on one of the buttons named after the file you would like to run.
