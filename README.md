@@ -1,5 +1,5 @@
 # protein_scaffold_software
-This repo contains my work to combine two existing repos that have done some work with the protein scaffolding project into a piece of executable software. All of this software was built on a Windows 10 Machine utilizing Python and it's essential libraries to function.
+This repo contains my work to combine two existing repos developed by two other A&T graduate students that have done some work with the protein scaffolding project into a piece of executable software. All of this software was built on a Windows 10 Machine utilizing Python and it's essential libraries to function.
 
 ## Setup
 * Install miniconda from https://docs.conda.io/projects/miniconda/en/latest/index.html (version during development was 23.9.0). You'll run into a screen that gives you some options, check the ones that are reccomended. Once you get this fully setup, go into the miniconda CLI use the command ```conda --version``` to confirm you have miniconda setup.
@@ -15,7 +15,7 @@ This repo contains my work to combine two existing repos that have done some wor
 * Once this is setup all you have to do is run ```python software-runner.py``` in the tfenv environment that you've done all the previous setup in, make sure you are running python in the directory of this repo so python can actually run on the program.
 
 ## How the Software *currently* Works
-* This software simply launches the two major files from the repos this software is suppoed to work with. To launch either of the files, all you have to do is click on one of the buttons named after the file you would like to run. Running this alongside VSCode or the miniconda CLI will allow you to view the training process once you start executing one of the two processes. The app will also notify the user when the program is complete.  
+* This software simply launches the two major files from the repos this software is suppoed to work with. To launch either of the files, all you have to do is click on one of the buttons named after the file you would like to run. Running this alongside VSCode or the miniconda CLI will allow you to view the training process once you start executing one of the two processes. The app will also notify the user when the selected program is complete, then all you have to do is view the resulting items in the /results (for autoencoder.py) and /results2 (for main.py) folders.  
 
 ## Future Planned Work
 * Add some labels to show how long each file should take to complete ✅
